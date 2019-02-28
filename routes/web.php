@@ -16,4 +16,4 @@ Route::get('/', function () {
 });*/
 
 Route::get('/', 'HoroscopeController@index');
-Route::post('/', 'HoroscopeController@index');
+Route::post('/', 'HoroscopeController@index')->name('posts.store');
