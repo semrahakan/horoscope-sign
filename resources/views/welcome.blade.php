@@ -27,7 +27,7 @@
                     <div class="form-row align-items-center">
                         <div class="col-auto my-1">
                             <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="select-month">
+                            <select class="custom-select mr-sm-2" name="select-month">
                                 <option selected>Month</option>
                                 @foreach($months as $month)
                                     <option value="{{$month}}">{{$month}}</option>
@@ -36,7 +36,7 @@
                         </div>
                         <div class="col-auto my-1">
                              <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="select-day">
+                            <select class="custom-select mr-sm-2" name="select-day">
                                 <option selected>Day</option>
                                 @foreach($days as $day)
                                     <option value="{{$day}}">{{$day}}</option>
@@ -45,7 +45,7 @@
                         </div>
                         <div class="col-auto my-1">
                              <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="select-year">
+                            <select class="custom-select mr-sm-2" name="select-year">
                                 <option selected>Year</option>
                                 @foreach($years as $year)
                                     <option value="{{$year}}">{{$year}}</option>

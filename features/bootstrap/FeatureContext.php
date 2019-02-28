@@ -22,6 +22,8 @@ class FeatureContext extends \Behat\MinkExtension\Context\MinkContext implements
 
     /**
      * @When I select :arg1 in the :arg2 select
+     *
+     * When I select "15" in the "select-day" select
      */
     public function iSelectInTheSelect2($arg1, $arg2)
     {
