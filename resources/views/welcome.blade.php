@@ -56,12 +56,10 @@
                             <button type="submit" class="btn btn-primary" name="submit-btn" >Submit</button>
                         </div>
                         @if( $result )
-                            @foreach( $result as $k => $r )
-                                <div class="col-auto my-lg-4">
-                                    <label><b>{{$k}}</b></label><br>
-                                    {{$r}}
+                            <div class="col-auto my-lg-4">
+                                    <label><b>{{$result->getSign()}}</b></label><br>
+                                {{$result->getInfo()}}
                                 </div>
-                            @endforeach
                         @endif
                     </div>
                 </form>
