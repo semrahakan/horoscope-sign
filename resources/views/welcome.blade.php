@@ -57,10 +57,8 @@
                         </div>
                         @if( $result )
                             @foreach( $result as $k => $r )
-                                <div class="col-auto my-4">
-                                    <label>{{$k}}</label>
-                                </div>
                                 <div class="col-auto my-lg-4">
+                                    <label><b>{{$k}}</b></label><br>
                                     {{$r}}
                                 </div>
                             @endforeach
