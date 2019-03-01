@@ -29,6 +29,7 @@ class HoroscopePageTest extends TestCase
         $this->assertEquals(200, $response->status());
     }
 
+
     public function testHoroscopeForm(){
 
         $data = [

@@ -11,6 +11,11 @@ namespace App\Business;
 
 class ChineseHoroscope
 {
+    /**
+     * All information related to horoscopes
+     *
+     * @return array
+     */
     public function horoscopeInformation(){
         $horoscope_years = [
             'Rat' => [
@@ -120,6 +125,12 @@ class ChineseHoroscope
         return $horoscope_years;
     }
 
+    /**
+     * This function calculates the Chinese sign according to given year
+     *
+     * @param $year
+     * @return ChineseSign
+     */
     public function getSign($year){
         $all_sign = $this->horoscopeInformation();
 

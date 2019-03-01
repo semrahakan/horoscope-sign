@@ -48,13 +48,12 @@ class HoroscopeController extends Controller
     }
 
     /**
-     * This is the function to calculate horoscope according to given params
+     * This function uses ChineseHoroscope class to calculate sign
      *
      * @param Request $request
      *
-     * @return int|string
+     * @return \App\Business\ChineseSign
      */
-
     public function calculateHoroscope(Request $request)
     {
         $user_year = $request->get('select-year');
